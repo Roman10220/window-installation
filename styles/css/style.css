@@ -495,7 +495,7 @@ body {
   color: #424268;
   padding: 0 16px 0 16px;
   width: 323px;
-  height: 11%;
+  height: 40px;
 }
 .form__name {
   margin-bottom: 15px;
@@ -544,6 +544,7 @@ body {
   width: 199px;
   height: 55px;
   background: #EF7F04;
+  margin-bottom: 55px;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -1946,7 +1947,6 @@ body {
   font-weight: 700;
   line-height: 19px;
   color: #FFFFFF;
-  margin-bottom: 50px;
   -webkit-transition-duration: 0.5s;
        -o-transition-duration: 0.5s;
           transition-duration: 0.5s;

@@ -382,7 +382,7 @@ body {
 		color: #424268;
 		padding: 0 16px 0 16px;
 		width: 323px;
-		height: 11%;
+		height: 40px;
 	}
 
 	&__name {
@@ -438,6 +438,7 @@ body {
 		width: 199px;
 		height: 55px;
 		background: #EF7F04;
+		margin-bottom: 55px;
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 16px;
@@ -1710,7 +1711,6 @@ body {
 		font-weight: 700;
 		line-height: 19px;
 		color: #FFFFFF;
-		margin-bottom: 50px;
 		transition-duration: .5s;
 		&:hover {
 			width: 290px;
