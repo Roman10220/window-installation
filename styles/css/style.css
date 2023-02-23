@@ -1740,6 +1740,7 @@ body {
   background: #FFFFFF;
   border-radius: 3px;
   min-height: 100%;
+  display: none;
 }
 .portfolio__title {
   margin: 87px 0 48px 0;
