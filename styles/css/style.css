@@ -1071,18 +1071,6 @@ body {
 }
 
 /*-----------------------------------------------------*/
-.menu {
-  min-height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1113,8 +1101,6 @@ body {
   -webkit-transition-duration: 0.5s;
        -o-transition-duration: 0.5s;
           transition-duration: 0.5s;
-}
-.menu__item a {
   color: #2F2F51;
 }
 .menu__item:hover {
@@ -1135,12 +1121,13 @@ body {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
-}
-.menu__item:hover a {
   color: #FFFFFF;
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s;
+}
+.menu__item.active {
+  background: #EF7F04;
 }
 @media (max-width: 700px) {
   .menu {
@@ -1152,14 +1139,17 @@ body {
   text-align: center;
   margin: 103px 0 42px 0;
 }
-.products__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.products__body-content {
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 37px;
+}
+.products__body-content.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .products__image {
   border-radius: 3px;
@@ -1270,6 +1260,9 @@ body {
     min-width: 100%;
     height: auto;
     padding-top: 25px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media (max-width: 424px) {
@@ -1413,18 +1406,15 @@ body {
   text-align: center;
   margin: 96px 0 40px 0;
 }
-.company__item {
-  padding: 0 15px;
+.company__body-content {
+  display: none;
+  border-radius: 3px;
+  margin-top: 35px;
 }
-.company__item2 {
-  padding: 0 15px;
-}
-.company__body {
+.company__body-content.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 3px;
-  margin-top: 35px;
 }
 .company__block-1 {
   display: -webkit-box;
