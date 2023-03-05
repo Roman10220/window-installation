@@ -1237,7 +1237,7 @@ body {
 	}
 
 	&__body-content {
-		display: none;
+		display: flex;
 		border-radius: 3px;
 		margin-top: 35px;
 	}
@@ -1457,6 +1457,11 @@ body {
 			font-size: 14px;
 			margin: 0 5px 5px 0;
 			line-height: 19px;
+		}
+	}
+	@media (max-width: 765px) {
+		&__body-content {
+			flex-wrap: wrap;
 		}
 	}
 	@media (max-width: 745px) {
