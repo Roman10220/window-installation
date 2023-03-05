@@ -1851,7 +1851,7 @@ body {
   background: #EEEEF3;
   border-radius: 3px;
   padding: 30px 20px;
-  min-height: 80px;
+  min-height: auto;
   cursor: pointer;
 }
 .question__card-item:hover .question__card-title {
