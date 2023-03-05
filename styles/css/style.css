@@ -1842,60 +1842,56 @@ body {
 .question__card-item {
   background: #EEEEF3;
   border-radius: 3px;
-}
-.question__card-title {
-  display: block;
-  position: relative;
+  padding: 30px 20px;
+  min-height: 80px;
   cursor: pointer;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  color: #2F2F51;
-  padding: 25px 19px;
-  -webkit-transition-duration: 0.5s;
-       -o-transition-duration: 0.5s;
-          transition-duration: 0.5s;
 }
-.question__card-title:hover {
+.question__card-item:hover .question__card-title {
   color: #EF7F04;
   -webkit-transition-duration: 0.5s;
        -o-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
-.question__card-input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  position: absolute;
-  width: 0;
-  height: 0;
+.question__card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2F2F51;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
-.question__card-input:checked ~ .question__card-text {
-  display: block;
+.question__card-title::after {
+  content: "+";
+  font-size: 30px;
+  margin-left: auto;
+}
+.question__card-title-active::after {
+  content: "-";
 }
 .question__card-text {
   display: none;
   line-height: 19px;
+  margin-top: 25px;
   color: #000000;
-  padding: 25px 19px;
+}
+@media (max-width: 405px) {
+  .question__card-item {
+    padding: 20px 10px;
+  }
 }
 @media (max-width: 600px) {
   .question__card-title {
     font-size: 15px;
   }
-}
-@media (max-width: 765px) {
-  .question__title {
-    padding-top: 30px;
-  }
-  .question__title h3 {
-    margin-bottom: 40px;
-  }
-  .question__card-title {
-    padding: 18px 19px;
-  }
-  .question__body {
-    padding: 0 15px 40px 15px;
+  .question__card-title::after {
+    font-size: 22px;
   }
 }
 

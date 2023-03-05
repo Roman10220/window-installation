@@ -1592,59 +1592,58 @@ body {
 	&__card-item {
 		background: #EEEEF3;
 		border-radius: 3px;
+		padding: 30px 20px;
+		min-height: 80px;
+		cursor: pointer;
 	}
 
-	&__card-title {
-		display: block;
-		position: relative;
-		cursor: pointer;
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 21px;
-		color: #2F2F51;
-		padding: 25px 19px;
-		transition-duration: .5s;
-
-		&:hover {
+	&__card-item:hover{
+		.question__card-title {
 			color: #EF7F04;
 			transition-duration: .5s;
 		}
 	}
 
-	&__card-input {
-		appearance: none;
-		position: absolute;
-		width: 0;
-		height: 0;
+	&__card-title {
+		display: flex;
+		align-items: center;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 21px;
+		color: #2F2F51;
+		transition-duration: .5s;
+		&::after {
+			content: '+';
+			font-size: 30px;
+			margin-left: auto;
+		}
 	}
 
-	&__card-input:checked ~ &__card-text {
-		display: block;
+	&__card-title-active::after {
+		content: '-';
 	}
 
 	&__card-text {
+		// max-height: 0px;
+		// overflow: hidden;
 		display: none;
 		line-height: 19px;
+		margin-top: 25px;
 		color: #000000;
-		padding: 25px 19px;
+	}
+	@media (max-width: 405px) {
+		&__card-item {
+			padding: 20px 10px;
+		}
 	}
 	@media (max-width: 600px) {
 		&__card-title {
 			font-size: 15px;
 		}
-	}
-	@media (max-width: 765px) {
-		&__title {
-			padding-top: 30px;
-		}
-		&__title h3 {
-			margin-bottom: 40px;
-		}
 		&__card-title {
-			padding: 18px 19px;
-		}
-		&__body {
-			padding: 0 15px 40px 15px;
+			&::after {
+				font-size: 22px;
+			}
 		}
 	}
 }
