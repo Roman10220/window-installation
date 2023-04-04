@@ -223,8 +223,8 @@ body {
   background: url("../../img/icon/btn-orange.svg") no-repeat;
   width: 22px;
   height: 20px;
-  top: 9px;
-  left: 8px;
+  top: 10px;
+  left: 10px;
 }
 .header__button-blue {
   margin-right: 15px;
@@ -271,12 +271,12 @@ body {
   background: url("../../img/icon/btn-blue.svg") no-repeat;
   width: 22px;
   height: 20px;
-  top: 9px;
-  left: 8px;
+  top: 10px;
+  left: 10px;
 }
 
 .btn {
-  min-width: 169px;
+  min-width: 200px;
   min-height: 40px;
   border-radius: 3px;
   -webkit-transition-duration: 0.3s;
@@ -284,7 +284,7 @@ body {
           transition-duration: 0.3s;
 }
 .btn:hover {
-  min-width: 175px;
+  min-width: 210px;
   min-height: 45px;
   -webkit-transition-duration: 0.3s;
        -o-transition-duration: 0.3s;
@@ -541,7 +541,7 @@ body {
   left: -190px;
 }
 .form__button-orange {
-  width: 199px;
+  width: 200px;
   height: 55px;
   background: #EF7F04;
   margin-bottom: 55px;
@@ -1698,7 +1698,7 @@ body {
   padding-left: 22px;
   color: #FFFFFF;
   width: 312px;
-  height: 54.5px;
+  height: 55px;
 }
 .company__button-orange:hover {
   width: 315px;
@@ -1712,8 +1712,8 @@ body {
   background: url("../../img/icon/btn-orange.svg") no-repeat;
   width: 22px;
   height: 20px;
-  top: 30%;
-  left: 7%;
+  top: 17px;
+  left: 13px;
 }
 @media (max-width: 1024px) {
   .company__wrap {
