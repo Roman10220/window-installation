@@ -7,6 +7,9 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
 	<link rel="stylesheet" href="./styles/css/style.css">
 	<title>window house</title>
+	<script src="./js/script.js" defer></script>
+	<script src="./js/script2.js" defer></script>
+	<script src="./js/menuBurger.js" defer></script>
 </head>
 
 <body>
@@ -18,13 +21,18 @@
 						<a href="#"><img src="img/icon/logo.svg" alt="logo"></a>
 					</div>
 					<nav class="header__menu">
+						<button class="header__menu-btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
 						<ul class="header__list">
-							<li class="header__item"><a href="#services">Послуги</a></li>
-							<li class="header__item"><a href="#products">Виробництво</a></li>
-							<li class="header__item"><a href="#company">Про компанію</a></li>
-							<!-- <li class="header__item"><a href="#">Портфоліо</a></li> -->
-							<li class="header__item"><a href="#question">Питання відповідь</a></li>
-							<li class="header__item"><a href="#contacts">Контакти</a></li>
+							<li class="header__item"><a href="#!">Послуги</a></li>
+							<li class="header__item"><a href="#!">Виробництво</a></li>
+							<li class="header__item"><a href="#!">Про компанію</a></li>
+							<li class="header__item"><a href="#!">Портфоліо</a></li>
+							<li class="header__item"><a href="#!">Питання та відповіді</a></li>
+							<li class="header__item"><a href="#!">Контакти</a></li>
 						</ul>
 					</nav>
 					<div class="header__order">
@@ -40,19 +48,21 @@
 					<div class="ful-skrin__content">
 						<div class="ful-skrin__info">
 							<div class="ful-skrin__title">
-								<p>Вікна Хаус -</p>
-								<h3>Професійний підхід до скління</h3>
+								<h1>
+									<span>Вікна Хаус -</span> <br>
+									Професійний підхід до скління
+								</h1>
 							</div>
 							<div class="ful-skrin__servic">
-								<div class="ful-skrin__block-1">
+								<div class="ful-skrin__block">
 									<img src="img/icon/ocna-1.svg" alt="img">
 									<p>Сучасні структури Windows та балкон за доступними цінами</p>
 								</div>
-								<div class="ful-skrin__block-2">
+								<div class="ful-skrin__block">
 									<img src="img/icon/ocna-2.svg" alt="img">
 									<p>Кваліфікований підхід до вирішення проблем будь - якої складності</p>
 								</div>
-								<div class="ful-skrin__block-3">
+								<div class="ful-skrin__block">
 									<img src="img/icon/ocna-3.svg" alt="img">
 									<p>Гарантія найвищої якості нашої продукції</p>
 								</div>
@@ -69,11 +79,11 @@
 									class="form__email form__general">
 								<div class="form__box">
 									<input type="checkbox" name="checkbox" class="form__checkbox"><label
-										class="form__chec-title">Я погоджуюсь обробляти особисті дані відповідно до<a
+										class="form__chec-title">Я погоджуюсь обробляти особисті дані відповідно до <a
 											href="#">Політика конфіденційності</a></label>
 								</div>
 								<div class="form__box-btn">
-									<button class="form__button-orange btn">Заявка на замір</button>
+									<button class="form__button-orange btn" type="submit">Заявка на замір</button>
 								</div>
 							</form>
 						</div>
@@ -660,8 +670,5 @@
 			</div>
 		</footer>
 	</div>
-	<script src="./js/script.js"></script>
-	<script src="./js/script2.js"></script>
 </body>
-
 </html>
