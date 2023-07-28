@@ -7,9 +7,10 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
 	<link rel="stylesheet" href="./styles/css/style.css">
 	<title>window house</title>
-	<script src="./js/script.js" defer></script>
-	<script src="./js/script2.js" defer></script>
+	<script src="./js/tabu.js" defer></script>
+	<script src="./js/acardion.js" defer></script>
 	<script src="./js/menuBurger.js" defer></script>
+	<script src="./js/model.js" defer></script>
 </head>
 
 <body>
@@ -96,12 +97,12 @@
 						<h2 id="services">Наші послуги</h2>
 					</div>
 					<div class="services__content">
-						<div class="services__card-1">
-							<div class="services__card-1_title">
+						<div class="services__card">
+							<div class="services__card_title">
 								<img src="img/icon/serv_card-1.svg" alt="img">
 								<h3>Встановлення пластикових віконікон</h3>
 							</div>
-							<div class="services__card-1_subtitle">
+							<div class="services__card_subtitle">
 								<p>Встановіть пластикові вікна Rehau у надійного виробника з гарантією якості</p>
 							</div>
 							<svg width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -109,12 +110,12 @@
 								<path d="M0 10.75H37.0256" stroke="white" stroke-width="2" />
 							</svg>
 						</div>
-						<div class="services__card-2">
-							<div class="services__card-2_title">
+						<div class="services__card services__card-2">
+							<div class="services__card_title">
 								<img src="img/icon/serv_card-2.svg" alt="img">
 								<h3>Скління балконів та лоджій</h3>
 							</div>
-							<div class="services__card-2_subtitle">
+							<div class="services__card_subtitle">
 								<p>Ми займаємось скліннями та прикрасою балконів та лоджій. Тепле і холодне скління, виготовлення екстрактів та дахів. Ми беремо складні предмети</p>
 							</div>
 							<svg width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,12 +123,12 @@
 								<path d="M0 10.75H37.0256" stroke="white" stroke-width="2" />
 							</svg>
 						</div>
-						<div class="services__card-3">
-							<div class="services__card-3_title">
+						<div class="services__card services__card-3">
+							<div class="services__card_title">
 								<img src="img/icon/serv_card-3.svg" alt="img">
 								<h3>Скління котеджів та літніх котеджів</h3>
 							</div>
-							<div class="services__card-3_subtitle">
+							<div class="services__card_subtitle">
 								<p>Грейс Глазіння та закінчення: від котеджів та котеджів до терас та альтанок.Ми виділяємо особистого технолога для кожного об'єкта</p>
 							</div>
 							<svg width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -135,18 +136,465 @@
 								<path d="M0 10.75H37.0256" stroke="white" stroke-width="2" />
 							</svg>
 						</div>
-						<div class="services__card-4">
-							<div class="services__card-4_title">
+						<div class="services__card services__card-4">
+							<div class="services__card_title">
 								<img src="img/icon/serv_card-4.svg" alt="img">
 								<h3>Скління корпоративних об'єктів</h3>
 							</div>
-							<div class="services__card-4_subtitle">
+							<div class="services__card_subtitle">
 								<p>Ми впроваджуємо складні проекти для скляних торгових центрів, ресторанів, промислових приміщень та офісів</p>
 							</div>
 							<svg width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M23.3846 1.75L38 10.75L23.3846 19.75" stroke="white" stroke-width="2" />
 								<path d="M0 10.75H37.0256" stroke="white" stroke-width="2" />
 							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="modal modal-1">
+					<div class="modal__wrap">
+						<button class="modal__btn-remove">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 18 19" fill="none">
+								<path d="M17 1.5L0.999999 17.5" stroke="black" stroke-width="2"/>
+								<path d="M17 1.5L0.999999 17.5" stroke="black" stroke-width="2"/>
+								<path d="M1 1.5L17 17.5" stroke="black" stroke-width="2"/>
+								<path d="M1 1.5L17 17.5" stroke="black" stroke-width="2"/>
+							</svg>
+						</button>
+						<div class="modal__content">
+							<div class="modal__content-top">
+								<div class="modal__top-image">
+									<img src="./img/modal-top-image.jpg" alt="img">
+								</div>
+								<div class="modal__top-offers">
+									<h5>
+										Установка пластиковых окон
+									</h5>
+									<p>
+										Пластиковые окна Rehau
+										от проверенного производителя с
+										гарантией качества
+									</p>
+									<div class="modal__main-offers-btn">
+										<button class="modal__main-offers-btn-orange btn">Заявка на замер</button>
+										<button class="modal__main-offers-btn-blue btn">Заказать расчет</button>
+									</div>
+								</div>
+							</div>
+							<div class="modal__main">
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image1.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Пластиковые окна
+										</h6>
+										<p>
+											Использование ламинационных окон, ламинации в массе, 3д-ламинации, 
+											а также покраска окон.
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image2.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Ламинация
+										</h6>
+										<p>
+											Пластиковые окна могут быть любого нужного вам цвета. Внутри и снаружи.Ламинация
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image3.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Подоконники
+										</h6>
+										<p>
+											Качественный подоконник не царапается, выдерживает большие нагрузки и будет служить вам долгие годы.Подоконники
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image4.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Цветные ручки
+										</h6>
+										<p>
+											Оригинальные оконные ручки подчеркнут дизайн окна. Подберем оптимальный цвет ручек в зависимости от цвета всей конструкции.Цветные ручки
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image5.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Проветриватели
+										</h6>
+										<p>
+											Постоянное обновление воздуха в комнате снижает риск аллергии, улучшает сон и благоприятно влияет на самочувствие.
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image6.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Москитные сетки
+										</h6>
+										<p>
+											Нежеланные насекомые останутся на улице, а ваша кошка - в квартире. Устанавливаем сетки для пластиковых окон любых форм и размеров.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal modal-2">
+					<div class="modal__wrap">
+						<button class="modal__btn-remove">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 18 19" fill="none">
+								<path d="M17 1.5L0.999999 17.5" stroke="black" stroke-width="2"/>
+								<path d="M17 1.5L0.999999 17.5" stroke="black" stroke-width="2"/>
+								<path d="M1 1.5L17 17.5" stroke="black" stroke-width="2"/>
+								<path d="M1 1.5L17 17.5" stroke="black" stroke-width="2"/>
+							</svg>
+						</button>
+						<div class="modal__content">
+							<div class="modal__content-top">
+								<div class="modal__top-image">
+									<img src="./img/modal-top-image2.jpg" alt="img">
+								</div>
+								<div class="modal__top-offers">
+									<h5>
+										Остекление балконов и лоджий
+									</h5>
+									<p>
+										Занимаемся остеклением и отделкой балконов и лоджий. Теплое и холодное остекление, изготовление выносов и крыш. Беремся за сложные объекты
+									</p>
+									<div class="modal__main-offers-btn">
+										<button class="modal__main-offers-btn-orange btn">Заявка на замер</button>
+										<button class="modal__main-offers-btn-blue btn">Заказать расчет</button>
+									</div>
+								</div>
+							</div>
+							<div class="modal__main">
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image1.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Тёплое остекление
+										</h6>
+										<p>
+											Теплое остекление — возможность сделать из балкона или лоджии полноценное жилое помещение.
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image2.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Холодное остекление
+										</h6>
+										<p>
+											Холодное остекление рекомендовано в случаях, когда балкон или лоджия используются для хранения вещей.
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image3.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Панорамное остекление
+										</h6>
+										<p>
+											Остекление от пола до потолка, дающее максимальное естественное освещение и прекрасный обзор окрестностей.Панорамное остекление
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image4.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Остекление с выносом
+										</h6>
+										<p>
+											Способ увеличения площади и объема балкона или лоджии.Остекление с выносом
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image5.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Остекление с крышей
+										</h6>
+										<p>
+											Строительство крыши для домов с высоким потолком и квартир, расположенных на последних этажах.Остекление с крышей
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image6.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Объединение с комнатой
+										</h6>
+										<p>
+											Перепланировка квартиры, дающая дополнительные метры полезной площади и улучшающая жилищные условия.Объединение с комнатой
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal modal-3">
+					<div class="modal__wrap">
+						<button class="modal__btn-remove">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 18 19" fill="none">
+								<path d="M17 1.5L0.999999 17.5" stroke="black" stroke-width="2"/>
+								<path d="M17 1.5L0.999999 17.5" stroke="black" stroke-width="2"/>
+								<path d="M1 1.5L17 17.5" stroke="black" stroke-width="2"/>
+								<path d="M1 1.5L17 17.5" stroke="black" stroke-width="2"/>
+							</svg>
+						</button>
+						<div class="modal__content">
+							<div class="modal__content-top">
+								<div class="modal__top-image">
+									<img src="./img/modal-top-image3.jpg" alt="img">
+								</div>
+								<div class="modal__top-offers">
+									<h5>
+										Остекление коттеджей и дач
+									</h5>
+									<p>
+										Остекление и отделка под ключ: от коттеджей и дач до террас и беседок. Выделяем личного технолога под каждый объект.
+									</p>
+									<div class="modal__main-offers-btn">
+										<button class="modal__main-offers-btn-orange btn">Заявка на замер</button>
+										<button class="modal__main-offers-btn-blue btn">Заказать расчет</button>
+									</div>
+								</div>
+							</div>
+							<div class="modal__main">
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image4.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Цветные окна
+										</h6>
+										<p>
+											Использование ламинационных окон, ламинации в массе, 3д-ламинации, а также покраска окон.
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image2.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Фигурные окна
+										</h6>
+										<p>
+											Арочные окна, окна трапеции, треугольные окна, круглые и многоугольные окна
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image3.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Алюминиевые конструкции
+										</h6>
+										<p>
+											Идеальный вариант для большой площади остекления: зимние сады, террасы и т.п..
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image4.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Деревянные окна
+										</h6>
+										<p>
+											Экологичное и натуральное решение для остекления любого объекта.
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image5.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Портальные решения
+										</h6>
+										<p>
+											Эксклюзивные дверные и балконные раздвижные конструкции для элитных квартир и респектабельных домов, обеспечивающие панорамный вид и экономящие пространство.
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image6.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Рольставни и ворота
+										</h6>
+										<p>
+											Защитные рольставни для частных домов, роллетные ворота
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal modal-4">
+					<div class="modal__wrap">
+						<button class="modal__btn-remove">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 18 19" fill="none">
+								<path d="M17 1.5L0.999999 17.5" stroke="black" stroke-width="2"/>
+								<path d="M17 1.5L0.999999 17.5" stroke="black" stroke-width="2"/>
+								<path d="M1 1.5L17 17.5" stroke="black" stroke-width="2"/>
+								<path d="M1 1.5L17 17.5" stroke="black" stroke-width="2"/>
+							</svg>
+						</button>
+						<div class="modal__content">
+							<div class="modal__content-top">
+								<div class="modal__top-image">
+									<img src="./img/modal-top-image2.jpg" alt="img">
+								</div>
+								<div class="modal__top-offers">
+									<h5>
+										Остекление коттеджей и дач
+									</h5>
+									<p>
+										Остекление и отделка под ключ: от коттеджей и дач до террас и беседок. Выделяем личного технолога под каждый объект.
+									</p>
+									<div class="modal__main-offers-btn">
+										<button class="modal__main-offers-btn-orange btn">Заявка на замер</button>
+										<button class="modal__main-offers-btn-blue btn">Заказать расчет</button>
+									</div>
+								</div>
+							</div>
+							<div class="modal__main">
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image1.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Многоквартирные дома
+										</h6>
+										<p>
+											Изготовление и монтаж окон ПВХ под ключ. Приглашаем к партнерству застройщиков
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image2.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Офисные помещения
+										</h6>
+										<p>
+											Установка пластиковых окон, офисных перегородок и дверей и входных групп.
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image3.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Социальные объекты
+										</h6>
+										<p>
+											Остекляем детские сады, школы, медицинские учреждения
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image4.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Объекты торговли
+										</h6>
+										<p>
+											Способ увеличения площади и объема балкона или лоджии.
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image5.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Спортивные объекты
+										</h6>
+										<p>
+											Остекляем спортивные залы, бассейны, крытые спорткомплексы
+										</p>
+									</div>
+								</div>
+								<div class="modal__main-block">
+									<div class="modal__main-image">
+										<img src="./img/modal-main-image6.svg" alt="img">
+									</div>
+									<div class="modal__main-inner">
+										<h6>
+											Производственные помещения
+										</h6>
+										<p>
+											Устанавливаем окна для складских и промышленных зданий в соответствии с требованиями бизнеса
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -625,11 +1073,11 @@
 								<p>Установку повинні проводити лише експерти.Сотні сімей довіряють нам.Дізнайтеся більше, в якому рішення підходять для вас.Ви можете придбати недорогі товари з гарантованим високим якість.</p>
 							</div>
 							<div class="contacts__image">
-								<a href="#"><img src="img/icon/contacts-img6.svg" alt="#"></a>
-								<a href="#"><img src="img/icon/contacts-img5.svg" alt="#"></a>
-								<a href="#"><img src="img/icon/contacts-img4.svg" alt="#"></a>
-								<a href="#"><img src="img/icon/contacts-img3.svg" alt="#"></a>
-								<a href="#"><img src="img/icon/contacts-img2.svg" alt="#"></a>
+								<a href="#!"><img src="img/icon/contacts-img6.svg" alt="img"></a>
+								<a href="#!"><img src="img/icon/contacts-img5.svg" alt="img"></a>
+								<a href="#!"><img src="img/icon/contacts-img4.svg" alt="img"></a>
+								<a href="#!"><img src="img/icon/contacts-img3.svg" alt="img"></a>
+								<a href="#!"><img src="img/icon/contacts-img2.svg" alt="img"></a>
 							</div>
 						</div>
 						<div class="contacts__request">

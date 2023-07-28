@@ -507,7 +507,7 @@ button {
   line-height: 16px;
   color: #FFFFFF;
   position: relative;
-  z-index: 10;
+  z-index: 3;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
@@ -581,7 +581,7 @@ button {
 .services__title h2 {
   text-align: center;
 }
-.services__card-1 {
+.services__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,19 +595,20 @@ button {
   background: url("../../img/serv_card-1fon.jpg") 0 0/100% 100% no-repeat;
   border-radius: 3px;
   min-height: 268px;
-  padding-left: 50px;
+  padding: 0 10px 0 30px;
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
-.services__card-1:hover {
+.services__card:hover {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
           transform: scale(0.9);
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
-.services__card-1 svg {
+.services__card svg {
   position: absolute;
   width: 38px;
   height: 18px;
@@ -616,17 +617,17 @@ button {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
-.services__card-1:hover svg {
+.services__card:hover svg {
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
   right: 15px;
 }
-.services__card-1:hover path {
+.services__card:hover path {
   stroke: #EF7F1A;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
 }
-.services__card-1_title {
+.services__card_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -635,13 +636,13 @@ button {
           align-items: center;
   margin-top: 15px;
 }
-.services__card-1_title img {
+.services__card_title img {
   width: 68px;
   height: 77px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.services__card-1_title h3 {
+.services__card_title h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -649,237 +650,21 @@ button {
   margin-left: 21px;
   width: 221px;
 }
-.services__card-1_subtitle p {
+.services__card_subtitle p {
   font-size: 16px;
   line-height: 19px;
   color: #2F2F51;
   margin-top: 25px;
-  width: 303px;
+  max-width: 303px;
 }
 .services__card-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: url("../../img/serv_card-fon3.jpg") 0 0/100% 100% no-repeat;
-  border-radius: 3px;
-  min-height: 268px;
-  padding-left: 50px;
-  position: relative;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.services__card-2:hover {
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-.services__card-2 svg {
-  position: absolute;
-  width: 38px;
-  height: 18px;
-  right: 29px;
-  bottom: 27px;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-}
-.services__card-2:hover svg {
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-  right: 15px;
-}
-.services__card-2:hover path {
-  stroke: #EF7F1A;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-}
-.services__card-2_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 15px;
-}
-.services__card-2_title img {
-  width: 68px;
-  height: 77px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.services__card-2_title h3 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #2F2F51;
-  margin-left: 21px;
-  width: 254px;
-}
-.services__card-2_subtitle p {
-  font-size: 16px;
-  line-height: 19px;
-  color: #2F2F51;
-  margin-top: 25px;
-  width: 302px;
 }
 .services__card-3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: url("../../img/serv_card-fon3.jpg") 0 0/100% 100% no-repeat;
-  border-radius: 3px;
-  min-height: 268px;
-  padding-left: 50px;
-  position: relative;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.services__card-3:hover {
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-.services__card-3 svg {
-  position: absolute;
-  width: 38px;
-  height: 18px;
-  right: 29px;
-  bottom: 27px;
-}
-.services__card-3:hover svg {
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-  right: 15px;
-}
-.services__card-3:hover path {
-  stroke: #EF7F1A;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-}
-.services__card-3_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 15px;
-}
-.services__card-3_title img {
-  width: 68px;
-  height: 77px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.services__card-3_title h3 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #2F2F51;
-  margin-left: 21px;
-  width: 192px;
-}
-.services__card-3_subtitle p {
-  font-size: 16px;
-  line-height: 19px;
-  color: #2F2F51;
-  margin-top: 25px;
-  width: 265px;
 }
 .services__card-4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: url("../../img/serv_card-fon4.jpg") 0 0/100% 100% no-repeat;
-  border-radius: 3px;
-  min-height: 268px;
-  padding-left: 50px;
-  position: relative;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.services__card-4:hover {
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-.services__card-4 svg {
-  position: absolute;
-  width: 38px;
-  height: 18px;
-  right: 29px;
-  bottom: 27px;
-}
-.services__card-4:hover svg {
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-  right: 15px;
-}
-.services__card-4:hover path {
-  stroke: #EF7F1A;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-}
-.services__card-4_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 15px;
-}
-.services__card-4_title img {
-  width: 68px;
-  height: 77px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.services__card-4_title h3 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #2F2F51;
-  margin-left: 21px;
-  width: 299px;
-}
-.services__card-4_subtitle p {
-  font-size: 16px;
-  line-height: 19px;
-  color: #2F2F51;
-  margin-top: 25px;
-  width: 350px;
 }
 @media (max-width: 990px) {
   .services__content {
@@ -889,7 +674,7 @@ button {
     grid-template: repeat(4, 1fr)/repeat(1, 595px);
     row-gap: 25px;
   }
-  .services__card-1:hover {
+  .services__card:hover {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1);
@@ -922,10 +707,10 @@ button {
   .services__content {
     grid-template: repeat(4, 1fr)/repeat(1, 415px);
   }
-  .services__card-1 {
+  .services__card {
     background: url("../../img/serv_card-1fon-min.jpg") no-repeat;
   }
-  .services__card-1:hover {
+  .services__card:hover {
     -webkit-transform: scale(0.9);
         -ms-transform: scale(0.9);
             transform: scale(0.9);
@@ -967,7 +752,7 @@ button {
   .services__content {
     grid-template: repeat(4, 1fr)/repeat(1, 370px);
   }
-  .services__card-1 {
+  .services__card {
     background: url("../../img/serv_card-1fon-min375.jpg") no-repeat;
     padding-left: 10px;
   }
@@ -988,7 +773,7 @@ button {
   .services__content {
     grid-template: repeat(4, 1fr)/repeat(1, 315px);
   }
-  .services__card-1 svg {
+  .services__card svg {
     display: none;
   }
   .services__card-2 svg {
@@ -1003,6 +788,175 @@ button {
   .services__card-4_subtitle p {
     width: 300px;
   }
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0.5s, opacity 0.5s;
+  transition: visibility 0.5s, opacity 0.5s;
+}
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+.modal__wrap {
+  padding: 50px 138px 46px 110px;
+  margin: 15px 30px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+.modal.open .modal__wrap {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.modal__btn-remove {
+  position: absolute;
+  top: 33px;
+  right: 31px;
+  padding: 3px;
+}
+.modal__content {
+  max-width: 755px;
+}
+.modal__content-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 33px;
+}
+.modal__top-image img {
+  max-width: 307px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.modal__top-offers {
+  max-width: 375px;
+}
+.modal__top-offers h5 {
+  color: #2F2F51;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.modal__top-offers p {
+  max-width: 276px;
+  color: #000;
+  margin: 15px 0 25px 0;
+}
+.modal__main-offers-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 14px;
+}
+.modal__main-offers-btn-orange {
+  background: #EF7F04;
+  position: relative;
+  width: 169px;
+}
+.modal__main-offers-btn-orange::before {
+  content: "";
+  position: absolute;
+  background: url("../../img/icon/btn-orange.svg") 0 0/cover no-repeat;
+  width: 20px;
+  height: 18px;
+  top: 11px;
+  left: 9px;
+}
+.modal__main-offers-btn-orange:hover {
+  background: #d06c02;
+  -webkit-box-shadow: 3px 5px 5px #b1610b;
+          box-shadow: 3px 5px 5px #b1610b;
+}
+.modal__main-offers-btn-blue {
+  background: #3B3A63;
+  position: relative;
+  width: 172px;
+}
+.modal__main-offers-btn-blue::before {
+  content: "";
+  position: absolute;
+  background: url("../../img/icon/btn-blue.svg") 0 0/cover no-repeat;
+  width: 20px;
+  height: 18px;
+  top: 11px;
+  left: 10px;
+}
+.modal__main-offers-btn-blue:hover {
+  background: #414079;
+  -webkit-box-shadow: 3px 5px 5px #272563;
+          box-shadow: 3px 5px 5px #272563;
+}
+.modal__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 65px;
+}
+.modal__main-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 17px;
+  max-width: 335px;
+}
+.modal__main-image img {
+  max-width: 80px;
+  min-height: 74px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.modal__main-inner {
+  max-width: 265px;
+}
+.modal__main-inner h6 {
+  color: #2F2F51;
+  font-size: 14px;
+  font-weight: 700;
+}
+.modal__main-inner p {
+  color: #000;
+  font-size: 13px;
+  line-height: 20px;
 }
 
 /*-----------------------------------------------------*/
